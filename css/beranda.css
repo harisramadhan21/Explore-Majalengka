@@ -1,0 +1,501 @@
+/* Home { */
+
+/* navbar */
+.navbar{
+    background: #fff;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.nav-link{
+    font-weight: 600;
+    color: #000;
+}
+/* penutup navbar */
+
+/* background */
+.bg{
+    background-image: url(../img/water.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 700px;
+}
+
+.bg::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 100%;
+    height: 700px;
+}
+/* penutup background */
+
+/* hero */
+.hero{
+    position: relative;
+    z-index: 999;
+    margin-top: 150px;
+}
+
+.hero .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero .text h1{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 5px;
+    font-size: 64px;
+}
+
+.hero .text p{
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 60px;
+    font-weight: 100;
+    max-width: 750px;
+    color: #fff;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+/* penutup hero */
+
+.no-booking{
+    z-index: 999;
+    margin-top: 300px;
+}
+
+/* testimoni */
+.title{
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.title h3{
+    position: relative;
+    font-weight: 50px;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.title h3::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 6px;
+    background: #000;
+}
+
+.testimoni .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figure-img{
+    position: relative;
+}
+
+.figure-img img{
+    width: 420px;
+    height: 280px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.figure-img a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 280px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.figure-img:hover a{
+    opacity: 1;
+}
+
+.figure-caption h3{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.figure-caption h3 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.figure-caption p{
+    font-weight: 300;
+    font-size: 14px;
+    color: #777;
+}
+
+.bottom-caption img{
+    width: 35px;
+    height: 35px;
+}
+
+.bottom-caption span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.icon span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.icon span i{
+    width: 14px;
+    height: 14px;
+}
+/* penutup testimoni */
+
+/* footer */
+footer{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #192E46;
+    height: 220px;
+}
+
+footer .media{
+    margin-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .media a{
+    text-decoration: none;
+    color: #ffff;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+}
+
+footer h3{
+    font-weight: 700;
+    color: #fff;
+}
+
+footer h5{
+    font-weight: 600;
+    color: #fff;
+}
+
+footer p{
+    font-weight: 100;
+    color: #fff;
+}
+
+/* penutup footer */
+
+
+/* } Penutup Home */
+
+
+/* Package{ */
+.package{
+    margin-top: 120px;
+    text-align: center;
+}
+.package .figure-img{
+    position: relative;
+}
+
+.package .figure-img img{
+    width: 220px;
+    height: 280px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.package .figure-img .content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.package .figure-img .content span{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.package .figure-img .content p{
+    color: #fff;
+    font-weight: 100;
+}
+
+.package .figure-img a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.package .figure-img:hover a{
+    opacity: 1;
+}
+
+.modal-body .figure-img{
+    width: 125px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.modal-body .btn{
+    width: 250px;
+}
+/* } Penutup Package */
+
+/* booking {*/
+.booking-info .judul{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.booking-info h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.booking-info span{
+    font-style: 14px;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.booking-info .card{
+    border-radius: 10px;
+    background: rgb(248, 248, 248);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);   
+}
+
+.booking-info .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-info img{
+    width: 250px;
+    height:300px;
+    object-position: center;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.booking-info .row-button{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: flex;
+}
+
+.booking-info .btn{
+    margin:30px 20px;
+    width: 300px;
+    height: 40px;
+}
+/* } penutup booking */
+
+/* payment { */
+.payment .judul{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.payment h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.payment span{
+    font-style: 14px;
+    color: #000;
+    font-weight: 300;
+}
+
+.payment .card{
+    border-radius: 10px;
+    background: rgb(248, 248, 248);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);       
+}
+
+.payment .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.payment .bank{
+    align-items: center;
+    justify-content: center;
+}
+
+.payment .figure img{
+    width: 80px;
+    height: 50px;
+    margin-top: -10px;
+}
+
+
+.payment .bank .info h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.payment .bank .info span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.payment .row-button{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: flex;
+}
+
+.payment .btn{
+    margin:30px 20px;
+    width: 300px;
+    height: 40px;
+}
+
+.payment .modal-body .text{
+    width: 300px;
+    color: #777;
+}
+/* } penutup payment */
+
+
+/* tablet */
+
+@media (max-width: 991px) { 
+    /* home */
+    .bg{
+        height: 550px;
+    }
+    
+    .bg::after{
+        height: 550px;
+    }
+    .hero{
+        margin-top: 100px;
+    }
+
+    .hero .text h1{
+        color: #fff;
+        font-weight: 700;
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
+    
+    .hero .text p{
+        font-size: 16px;
+        margin-bottom: 30px;
+        max-width: 550px;
+        text-align: start;
+        line-height: 20px;
+    }
+
+    .no-booking{
+        z-index: 999;
+        margin-top: 200px;
+    }
+
+    .figure-img img{
+        width: 550px;
+        height: 330px;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    footer{
+        height: auto;
+    }
+}
+
+/* penutup tablet */
+
+
+
+/* phone */
+
+@media (max-width: 576px) { 
+    /* home */
+    .bg{
+        height: 550px;
+    }
+    
+    .bg::after{
+        height: 550px;
+    }
+    .hero{
+        margin-top: 100px;
+    }
+
+    .hero .text h1{
+        color: #fff;
+        font-weight: 700;
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    
+    .hero .text p{
+        font-size: 12px;
+        margin-bottom: 30px;
+        max-width: auto;
+        text-align: start;
+        line-height: 20px;
+    }
+
+    footer{
+        height: auto;
+    }
+    /* penutup home */
+
+    /* package */
+    .modal-body .figure-img{
+        width: 250px;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+    /* penutup package */
+}
+
+/* penutup phone */
